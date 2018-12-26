@@ -2,5 +2,6 @@
 - hosts: all
   tasks:
     - name: copy
-      copy: /var/lib/jenkins/workspace/assis/file.yml
-      dest: /var/www/html
+      copy:
+       src:/var/lib/jenkins/workspace/assis/file.yml
+       dest: /var/www/html
