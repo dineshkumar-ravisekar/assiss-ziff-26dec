@@ -1,7 +1,9 @@
 ---
 - hosts: all
+  remote_user: cloud_user
   tasks:
     - name: copy
+      become: yes
       copy:
        src: /var/lib/jenkins/workspace/assis/file.yml
        dest: /var/www/html/
