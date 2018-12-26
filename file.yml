@@ -3,5 +3,5 @@
   tasks:
     - name: copy
       copy:
-       src: /var/lib/jenkins/workspace/code/index.html
+       src: /var/lib/jenkins/workspace/assis/code/index.html
        dest: /var/www/html/
