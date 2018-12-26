@@ -1,9 +1,9 @@
 ---
 - hosts: all
   tasks:
-  - name: copy
-    shell: cd /var/lib/jenkins/workspace/assiss-ziff-26dec/; scp cloud_user@rdinesh1c.mylabserver.com:/var/lib/jenkins/workspace/assiss-ziff-26dec/file.yml cloud_user@rdinesh2c.mylabserver.com:/var/www/html
-    mode: 0755
+    - name: copy
+      shell: cd /var/lib/jenkins/workspace/assiss-ziff-26dec/; scp cloud_user@rdinesh1c.mylabserver.com:/var/lib/jenkins/workspace/assiss-ziff-26dec/file.yml cloud_user@rdinesh2c.mylabserver.com:/var/www/html
+      mode: 0755
      
     
  
