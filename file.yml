@@ -1,0 +1,16 @@
+---
+- hosts: all
+  tasks:
+  - name: install apache
+    yum:
+      name: httpd
+      state: latest
+  - name: service
+    service:
+     name: httpd
+     state: started
+     enabled: yes
+   - name: wget
+     shell: wget 
+    
+  
