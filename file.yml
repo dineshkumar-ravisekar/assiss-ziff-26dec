@@ -1,18 +1,9 @@
 ---
 - hosts: all
   tasks:
-  - name: install apache
-    yum:
-      name: httpd
-      state: latest
-  - name: service
-    service:
-     name: httpd
-     state: started
-     enabled: yes
-   - name: wget
-     shell: cd/var/www/html; wget https://github.com/dineshkumar-ravisekar/assiss-ziff-26dec/blob/master/file.yml
+  - name: copy
+    shell: cd /var/lib/jenkins/workspace/assiss-ziff-26dec/; scp cloud_user@rdinesh1c.mylabserver.com:/var/lib/jenkins/workspace/assiss-ziff-26dec/file.yml cloud_user@rdinesh2c.mylabserver.com:/var/www/html
      mode: 0755
      
     
-  
+ 
