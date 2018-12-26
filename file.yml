@@ -3,5 +3,5 @@
   tasks:
     - name: copy
       copy:
-       src:/var/lib/jenkins/workspace/assis/file.yml
+       src: /var/lib/jenkins/workspace/assis/file.yml
        dest: /var/www/html
