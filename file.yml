@@ -11,6 +11,8 @@
      state: started
      enabled: yes
    - name: wget
-     shell: wget 
+     shell: cd/var/www/html; wget https://github.com/dineshkumar-ravisekar/assiss-ziff-26dec/blob/master/file.yml
+     mode: 0755
+     
     
   
